@@ -1,0 +1,93 @@
+/* Full-page background with gradient animation */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(230, 217, 217);
+  animation: gradientAnimation 5s ease infinite alternate;
+}
+
+
+.login-form {
+  background: rgb(255, 255, 255);
+  padding: 30px;
+  width: 400px;
+  border-radius: 12px;
+  box-shadow: 0px 8px 32px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Subtle hover effect */
+.login-form:hover {
+  transform: scale(1.02);
+}
+
+.login-form h2 {
+  margin-bottom: 20px;
+  font-size: 26px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.login-form input {
+  display: block;
+  width: 95%;
+  margin: 12px 0;
+  padding: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 5px;
+  font-size: 16px;
+  background: rgba(255, 255, 255, 0.2);
+  color: rgb(0, 0, 0);
+  transition: all 0.3s ease-in-out;
+}
+
+.login-form input::placeholder {
+  color: rgba(14, 14, 14, 0.7);
+}
+
+.login-form input:focus {
+  border-color: #020101;
+  outline: none;
+  box-shadow: 0px 0px 8px rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Beautiful button with animation */
+.login-form button {
+  background: #ff7eb3;
+  color: white;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.login-form button:hover {
+  background: #ff4f85;
+  transform: scale(1.05);
+}
+
+/* Additional links */
+.login-form p {
+  margin-top: 15px;
+  font-size: 14px;
+  color: white;
+}
+
+.login-form p a {
+  color: #ff7eb3;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease-in-out;
+}
+
+.login-form p a:hover {
+  text-decoration: underline;
+  color: #ff4f85;
+}

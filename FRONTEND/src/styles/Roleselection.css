@@ -1,0 +1,75 @@
+/* Role Selection Page Styling */
+.role-selection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: linear-gradient(to right, #2c3e50, #4ca1af);
+  color: #fff;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+}
+
+.role-selection-title {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.role-selection-options {
+  display: flex;
+  gap: 30px;
+}
+
+.role-card {
+  width: 300px;
+  padding: 30px;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.role-card:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.2);
+}
+
+.role-card h3 {
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+}
+
+.role-card p {
+  font-size: 1rem;
+  opacity: 0.9;
+}
+
+/* Interviewer & Candidate Card Specific Colors */
+.interviewer {
+  border: 2px solid #3498db;
+}
+
+.interviewer:hover {
+  background: rgba(52, 152, 219, 0.3);
+}
+
+.candidate {
+  border: 2px solid #2ecc71;
+}
+
+.candidate:hover {
+  background: rgba(46, 204, 113, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .role-selection-options {
+      flex-direction: column;
+  }
+}
